@@ -1,0 +1,109 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+.admin-back{
+  background: rgb(234,239,241);
+  background: -moz-linear-gradient(0deg, rgba(234,239,241,1) 23%, rgba(8,142,208,1) 93%);
+  background: -webkit-linear-gradient(0deg, rgba(234,239,241,1) 23%, rgba(8,142,208,1) 93%);
+  background: linear-gradient(0deg, rgba(234,239,241,1) 23%, rgba(8,142,208,1) 93%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eaeff1",endColorstr="#088ed0",GradientType=1);
+}
+
+.footer-grad{
+  background: rgb(203,230,248);
+background: -moz-linear-gradient(90deg, rgba(203,230,248,1) 0%, rgba(209,192,255,1) 35%, rgba(253,186,239,1) 70%, rgba(203,230,248,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(203,230,248,1) 0%, rgba(209,192,255,1) 35%, rgba(253,186,239,1) 70%, rgba(203,230,248,1) 100%);
+background: linear-gradient(90deg, rgba(203,230,248,1) 0%, rgba(209,192,255,1) 35%, rgba(253,186,239,1) 70%, rgba(203,230,248,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbe6f8",endColorstr="#cbe6f8",GradientType=1);
+}
+
+/* CSS file */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.scrolling-container {
+  display: flex;
+  width: 200%;
+  animation: scrollLeft 30s linear infinite;
+}
+
+.scrolling-container:hover {
+  animation-play-state: paused;
+}
+
+.scrolling-container-reverse {
+  display: flex;
+  width: 200%;
+  animation: scrollRight 30s linear infinite;
+}
+
+.scrolling-container-reverse:hover {
+  animation-play-state: paused;
+}
+
+
+
+.scrolling-image {
+  width: 25%; /* Each image takes half of the container width */
+  height: auto;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .scrolling-image {
+    width: 100%;
+  }
+
+  .scrolling-container {
+    animation: scrollLeft 15s linear infinite;
+  }
+
+  .scrolling-container-reverse {
+    animation: scrollRight 15s linear infinite;
+  }
+}
+
+.slick-track{
+  min-width: 251680px;
+}
